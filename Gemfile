@@ -35,6 +35,7 @@ gem 'jbuilder', '~> 2.5'
 
 gem 'haml'
 gem 'haml-rails'
+gem 'bootstrap-sass'
 
 group :development, :test do
   gem 'sqlite3'
