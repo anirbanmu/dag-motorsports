@@ -1,4 +1,5 @@
 class Game < ApplicationRecord
+  default_scope { order(name: :asc) }
   has_many :game_platform_associations
   has_many :platforms, through: :game_platform_associations
   validates :name, presence: true, uniqueness: { case_sensitive: false }
