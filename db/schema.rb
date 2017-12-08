@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171204200806) do
+ActiveRecord::Schema.define(version: 20171207015257) do
 
   create_table "game_platform_associations", force: :cascade do |t|
     t.datetime "created_at", null: false
@@ -26,6 +26,17 @@ ActiveRecord::Schema.define(version: 20171204200806) do
     t.string "publisher"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "images", force: :cascade do |t|
+    t.string "filename"
+    t.text "base64"
+    t.string "mimetype"
+    t.string "imageable_type"
+    t.integer "imageable_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["imageable_type", "imageable_id"], name: "index_images_on_imageable_type_and_imageable_id"
   end
 
   create_table "platforms", force: :cascade do |t|

@@ -16,17 +16,27 @@ platforms = { windows: Platform.create(name: 'Microsoft Windows'),
               switch: Platform.create(name: 'Nintendo Switch'),
               osx: Platform.create(name: 'MacOS') }
 
-games = { Game.create(name: 'Forza Motorsport 7', release: Date.parse('October 3, 2017'), developer: 'Turn 10 Studios', publisher: 'Microsoft Studios') =>
-            [platforms[:windows], platforms[:xbox_one]],
-          Game.create(name: 'Gran Turismo Sport', release: Date.parse('October 17, 2017'), developer: 'Polyphony Digital', publisher: 'Sony Interactive Entertainment') =>
-            [platforms[:ps4]],
-          Game.create(name: 'Assetto Corsa', release: Date.parse('December 19, 2014'), developer: 'Kunos Simulazioni', publisher: 'Kunos Simulazioni') =>
-            [platforms[:windows], platforms[:xbox_one], platforms[:ps4]],
-          Game.create(name: 'Automobilista', release: Date.parse('February 29, 2016'), developer: 'Reiza Studios', publisher: 'Reiza') =>
-            [platforms[:windows]] }
+# This is so we can load our seed images as assets
+#sprocket_env = Sprockets::Environment.new
+#sprocket_env.append_path(Rails.root.join('seed', 'images'))
 
-games.each do |game, platforms|
-  platforms.each do |platform|
+games = { Game.create(name: 'Forza Motorsport 7', release: Date.parse('October 3, 2017'), developer: 'Turn 10 Studios', publisher: 'Microsoft Studios') =>
+            { platforms: [platforms[:windows], platforms[:xbox_one]], image: 'forza7.jpg' },
+          Game.create(name: 'Gran Turismo Sport', release: Date.parse('October 17, 2017'), developer: 'Polyphony Digital', publisher: 'Sony Interactive Entertainment') =>
+            { platforms: [platforms[:ps4]], image: 'gtsport.jpg' },
+          Game.create(name: 'Assetto Corsa', release: Date.parse('December 19, 2014'), developer: 'Kunos Simulazioni', publisher: 'Kunos Simulazioni') =>
+            { platforms: [platforms[:windows], platforms[:xbox_one], platforms[:ps4]], image: 'assettocorsa.png' },
+          Game.create(name: 'Automobilista', release: Date.parse('February 29, 2016'), developer: 'Reiza Studios', publisher: 'Reiza') =>
+            { platforms: [platforms[:windows]], image: 'automobilista.jpg' } }
+
+cover_image_path = Rails.root.join('seed', 'images', 'games', 'covers')
+
+games.each do |game, properties|
+  properties[:platforms].each do |platform|
     GamePlatformAssociation.create(game: game, platform: platform)
+  end
+
+  if properties[:image]
+    game.create_image(Image.properties_from_url(File.join(cover_image_path, properties[:image])))
   end
 end
