@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe Image, type: :model do
   let (:imageable_parent) { create(:Game) }
 
-  context 'invalid' do
+  context 'attribute validation' do
     it 'rejects nil filename' do
       image = build(:Image, filename: nil)
       expect(image).to_not be_valid

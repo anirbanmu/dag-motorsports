@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe Game, type: :model do
-  context 'invalid' do
+  context 'attribute validation' do
     it 'rejects nil name' do
       game = build(:Game, name: nil)
       expect(game).to_not be_valid
@@ -46,8 +46,14 @@ RSpec.describe Game, type: :model do
     end
   end
 
-  it 'accepts valid platform' do
+  it 'can create valid game' do
     game = build(:Game)
     expect(game).to be_valid
+  end
+
+  it 'destroys image when game is destroyed' do
+    image = create(:Image)
+    expect(image).to be_valid
+    expect{ image.imageable.destroy }.to change{ Image.count }.from(1).to(0)
   end
 end

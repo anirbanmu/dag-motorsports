@@ -6,7 +6,7 @@ RSpec.describe GamePlatformAssociation, type: :model do
   let(:game) { create(:Game) }
   let(:game2) { create(:Game) }
 
-  context 'invalid' do
+  context 'attribute validation' do
     it 'rejects nil game' do
       assoc = build(:GamePlatformAssociation, game: nil)
       expect(assoc).to_not be_valid
@@ -29,7 +29,7 @@ RSpec.describe GamePlatformAssociation, type: :model do
     end
   end
 
-  context 'valid' do
+  context 'valid attributes' do
     it 'no associations' do
       expect(platform.games).to be_empty
       expect(game.platforms).to be_empty
