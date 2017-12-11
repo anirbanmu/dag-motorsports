@@ -91,5 +91,25 @@ RSpec.describe GamePlatformAssociation, type: :model do
       expect(game2.platforms).to include(platform)
       expect(game2.platforms.count).to eq(1)
     end
+
+    it 'deletes associations when parent platform is destroyed' do
+      assoc = create(:GamePlatformAssociation, game: game, platform: platform)
+      expect(assoc).to be_valid
+
+      assoc2 = create(:GamePlatformAssociation, game: game2, platform: platform)
+      expect(assoc2).to be_valid
+
+      expect{ platform.destroy }.to change{ GamePlatformAssociation.count }.from(2).to(0)
+    end
+
+    it 'deletes association when parent game is destroyed' do
+      assoc = create(:GamePlatformAssociation, game: game, platform: platform)
+      expect(assoc).to be_valid
+
+      assoc2 = create(:GamePlatformAssociation, game: game, platform: platform2)
+      expect(assoc2).to be_valid
+
+      expect{ game.destroy }.to change{ GamePlatformAssociation.count }.from(2).to(0)
+    end
   end
 end
