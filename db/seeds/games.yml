@@ -1,0 +1,34 @@
+- name: Forza Motorsport 7
+  release: 2017-10-03
+  developer: Turn 10 Studios
+  publisher: Microsoft Studios
+  platforms:
+    - Microsoft Windows
+    - Microsoft Xbox One
+  image: forza7.jpg
+
+- name: Gran Turismo Sport
+  release: 2017-10-17
+  developer: Polyphony Digital
+  publisher: Sony Interactive Entertainment
+  platforms:
+    - Sony Playstation 4
+  image: gtsport.jpg
+
+- name: Assetto Corsa
+  release: 2014-12-19
+  developer: Kunos Simulazioni
+  publisher: Kunos Simulazioni
+  platforms:
+    - Microsoft Windows
+    - Microsoft Xbox One
+    - Sony Playstation 4
+  image: 'assettocorsa.png'
+
+- name: Automobilista
+  release: 2016-02-29
+  developer: Reiza Studios
+  publisher: Reiza
+  platforms:
+    - Microsoft Windows
+  image: automobilista.jpg
