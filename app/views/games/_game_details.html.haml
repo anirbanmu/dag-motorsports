@@ -1,0 +1,9 @@
+%p.gamedetails
+  %b Developer
+  %span= game.developer
+  %b Publisher
+  %span= game.publisher
+  %b Released
+  %span= game.release.to_formatted_s(:long)
+  %b Platforms
+  %span= game.platforms.map(&:name).join(' | ')

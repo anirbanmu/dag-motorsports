@@ -5,13 +5,4 @@
         %img{ src: game.image.img_tag_src, width: '100%' }
     .col-md-4
       %p.center.gametitle= link_to game.name, game
-    .col-md-7
-      %p.gamedetails
-        %b Developer
-        %span= game.developer
-        %b Publisher
-        %span= game.publisher
-        %b Released
-        %span= game.release.to_formatted_s(:long)
-        %b Platforms
-        %span= game.platforms.map(&:name).join(' | ')
+    .col-md-7= render 'game_details', game: game
