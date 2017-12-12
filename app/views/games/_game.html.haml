@@ -1,0 +1,8 @@
+%li.game{ id: game.name.parameterize }
+  .row.vertical-middle
+    .col-md-1
+      - if game.image
+        %img{ src: game.image.img_tag_src, width: '100%' }
+    .col-md-4
+      %p.center.gametitle= link_to game.name, game
+    .col-md-7= render 'game_details', game: game

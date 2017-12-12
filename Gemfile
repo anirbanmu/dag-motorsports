@@ -36,6 +36,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'haml'
 gem 'haml-rails'
 gem 'bootstrap-sass'
+gem 'mime-types'
 
 group :development, :test do
   gem 'sqlite3'
@@ -46,6 +47,8 @@ group :development, :test do
   gem 'selenium-webdriver'
   gem 'rspec-rails'
   gem 'rails-controller-testing'
+  gem 'factory_bot_rails'
+  gem 'faker'
 end
 
 group :test do
