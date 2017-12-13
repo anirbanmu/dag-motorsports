@@ -10,13 +10,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171207015257) do
+ActiveRecord::Schema.define(version: 20171213035824) do
 
-  create_table "game_platform_associations", force: :cascade do |t|
+  create_table "circuits", force: :cascade do |t|
+    t.string "name"
+    t.float "length"
+    t.integer "track_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["track_id"], name: "index_circuits_on_track_id"
+  end
+
+  create_table "game_platform_associations", force: :cascade do |t|
     t.integer "game_id"
     t.integer "platform_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["game_id"], name: "index_game_platform_associations_on_game_id"
+    t.index ["platform_id"], name: "index_game_platform_associations_on_platform_id"
   end
 
   create_table "games", force: :cascade do |t|
@@ -26,6 +37,7 @@ ActiveRecord::Schema.define(version: 20171207015257) do
     t.string "publisher"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["name"], name: "index_games_on_name"
   end
 
   create_table "images", force: :cascade do |t|
@@ -43,6 +55,15 @@ ActiveRecord::Schema.define(version: 20171207015257) do
     t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["name"], name: "index_platforms_on_name"
+  end
+
+  create_table "tracks", force: :cascade do |t|
+    t.string "name"
+    t.integer "game_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["game_id"], name: "index_tracks_on_game_id"
   end
 
 end

@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe "games/index.html.haml", type: :view do
-  let(:games) { [create(:Game), create(:Game), create(:Game)] }
+  let(:games) { [create(:game), create(:game), create(:game)] }
 
   it 'displays games & details' do
     assign(:games, games)

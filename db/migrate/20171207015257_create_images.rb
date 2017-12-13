@@ -5,6 +5,7 @@ class CreateImages < ActiveRecord::Migration[5.1]
       t.text :base64
       t.string :mimetype
       t.references :imageable, polymorphic: true, index: true
+
       t.timestamps
     end
   end
