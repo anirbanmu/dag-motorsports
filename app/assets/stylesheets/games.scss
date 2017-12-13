@@ -19,10 +19,16 @@
     border-bottom: 1px solid #efefef;
   }
 
-  .vertical-middle {
-    display: flex;
-    justify-contents: center;
-    align-items: center;
+  @media (min-width: 768px) {
+    .vertical-middle {
+      display: flex;
+      justify-contents: center;
+      align-items: center;
+    }
+  }
+
+  .game-image {
+    max-width: 60px;
   }
 
   li {
@@ -38,4 +44,7 @@
 .gamedetails {
   margin: 0px;
   font-size: 1.0em;
+  @media (max-width: 768px) {
+    text-align: center;
+  }
 }
