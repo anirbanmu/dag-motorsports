@@ -36,6 +36,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'haml'
 gem 'haml-rails'
 gem 'bootstrap-sass'
+gem 'jquery-rails'
 gem 'mime-types'
 
 group :development, :test do
