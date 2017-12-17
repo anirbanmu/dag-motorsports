@@ -51,6 +51,14 @@ p {
   line-height: 1.7em;
 }
 
+@media (min-width: 768px) {
+  .vertical-middle {
+    display: flex;
+    justify-contents: center;
+    align-items: center;
+  }
+}
+
 /* header */
 
 header {

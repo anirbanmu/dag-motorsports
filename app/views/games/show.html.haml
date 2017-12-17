@@ -1,3 +1,10 @@
 - provide(:title, @game.name)
 %h1= @game.name
 %h2= render 'game_details', game: @game
+
+%div.tracks
+  - @game.tracks.each_slice(3) do |slice|
+    .row.track-row
+      - slice.each do |t|
+        - if t
+          .col-sm-4.center.track{ id: t.name.parameterize }= render t
