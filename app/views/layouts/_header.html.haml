@@ -1,9 +1,14 @@
-%header.navbar.navbar-fixed-top.navbar-inverse.bg-inverse.text-white
-  .container
-    = link_to 'Dag Motorsports', root_path, id: 'logo'
-    %nav
-      %ul.nav.navbar-nav.navbar-right
-        %li= link_to 'Home', root_path
-        %li= link_to 'Help', '#'
-        %li= link_to 'Games', games_path
-        %li= link_to 'Log in', '#'
+%header
+  %nav.navbar.navbar-fixed-top.bg-faded.navbar-inverse.bg-inverse
+    .container
+      .navbar-header
+        %button.btn-primary.navbar-toggle.collapsed{ 'data-toggle': 'collapse', 'data-target': '#nav-header-links', 'aria-expanded': 'false' }
+          %i.glyphicon.glyphicon-align-justify
+        = link_to 'Dag Motorsport', root_path, class: 'navbar-brand'
+
+      .collapse.navbar-collapse#nav-header-links
+        %ul.nav.navbar-nav.navbar-right
+          %li= link_to 'Home', root_path
+          %li= link_to 'Help', '#'
+          %li= link_to 'Games', games_path
+          %li= link_to 'Log in', '#'

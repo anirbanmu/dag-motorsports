@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   get '/help', to: 'static_pages#help'
 
   resources :games, only: [:show, :index]
+  resources :circuits, only: [:show]
 end

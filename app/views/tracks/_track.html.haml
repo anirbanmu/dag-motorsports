@@ -1,0 +1,2 @@
+%h3= track.name
+%p{id: "#{track.name.parameterize}-circuits"}= track.circuits.map{ |c| link_to(c.name, c) }.join(' • ').html_safe

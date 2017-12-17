@@ -1,6 +1,6 @@
 class GamesController < ApplicationController
   def show
-    @game = Game.find(params.permit(:id)[:id])
+    @game = Game.find_by_id(params.require(:id))
   end
 
   def index

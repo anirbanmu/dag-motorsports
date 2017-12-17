@@ -44,3 +44,16 @@ game_seeds.each do |game_properties|
   image.imageable = game
   image.save!
 end
+
+track_seeds = YAML::load_file(File.join(seeds_path, 'tracks.yml'))
+track_seeds.each do |game_tracks|
+  game = Game.find_by(name: game_tracks.fetch('game'))
+  game_tracks.fetch('tracks').each do |track_properties|
+    track = Track.find_or_create_by!(name: track_properties.fetch('name'), game: game)
+    track_properties.fetch('ribbons').each do |ribbon|
+      circuit = Circuit.find_or_initialize_by(name: ribbon.fetch('name'), track: track)
+      circuit.length = ribbon['length']
+      circuit.save!
+    end
+  end
+end

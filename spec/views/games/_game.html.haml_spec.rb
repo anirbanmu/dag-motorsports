@@ -1,12 +1,12 @@
 require 'rails_helper'
 
 describe 'games/game' do
-  let(:game) { create(:Game) }
-  let(:platforms) { [create(:Platform), create(:Platform)] }
+  let(:game) { create(:game) }
+  let(:platforms) { [create(:platform), create(:platform)] }
 
   before(:example) do
     platforms.each do |p|
-      create(:GamePlatformAssociation, game: game, platform: p)
+      create(:game_platform_association, game: game, platform: p)
     end
   end
 
@@ -25,7 +25,7 @@ describe 'games/game' do
   end
 
   it 'renders full game information (with image)' do
-    image = create(:Image, imageable: game)
+    image = create(:image, imageable: game)
 
     assign(:game, game)
     render partial: 'games/game', locals: { game: game }

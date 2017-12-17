@@ -1,47 +1,47 @@
 require 'rails_helper'
 
 RSpec.describe Image, type: :model do
-  let (:imageable_parent) { create(:Game) }
+  let (:imageable_parent) { create(:game) }
 
   context 'attribute validation' do
     it 'rejects nil filename' do
-      image = build(:Image, filename: nil)
+      image = build(:image, filename: nil)
       expect(image).to_not be_valid
       expect(image.errors[:filename]).to_not be_empty
     end
 
     it 'rejects blank filename' do
-      image = build(:Image, filename: '')
+      image = build(:image, filename: '')
       expect(image).to_not be_valid
       expect(image.errors[:filename]).to_not be_empty
     end
 
     it 'rejects nil mimetype' do
-      image = build(:Image, mimetype: nil)
+      image = build(:image, mimetype: nil)
       expect(image).to_not be_valid
       expect(image.errors[:mimetype]).to_not be_empty
     end
 
     it 'rejects blank mimetype' do
-      image = build(:Image, mimetype: '')
+      image = build(:image, mimetype: '')
       expect(image).to_not be_valid
       expect(image.errors[:mimetype]).to_not be_empty
     end
 
     it 'rejects nil base64 representation' do
-      image = build(:Image, base64: nil)
+      image = build(:image, base64: nil)
       expect(image).to_not be_valid
       expect(image.errors[:base64]).to_not be_empty
     end
 
     it 'rejects blank base64 representation' do
-      image = build(:Image, base64: '')
+      image = build(:image, base64: '')
       expect(image).to_not be_valid
       expect(image.errors[:base64]).to_not be_empty
     end
 
     it 'rejects nil parent' do
-      image = build(:Image, imageable: nil)
+      image = build(:image, imageable: nil)
       expect(image).to_not be_valid
       expect(image.errors[:imageable]).to_not be_empty
     end
@@ -64,7 +64,7 @@ RSpec.describe Image, type: :model do
   end
 
   it 'generates valid image' do
-    image = build(:Image)
+    image = build(:image)
     expect(image).to be_valid
   end
 end
