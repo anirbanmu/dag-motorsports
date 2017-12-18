@@ -1,4 +1,7 @@
 FactoryBot.define do
+  factory :user do
+    
+  end
   factory :platform do
     name { Faker::App.unique.name }
   end

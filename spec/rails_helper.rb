@@ -54,6 +54,9 @@ RSpec.configure do |config|
   config.include RSpecHtmlMatchers
   config.include Rails.application.routes.url_helpers
   config.include FactoryBot::Syntax::Methods
+  config.include Devise::Test::ControllerHelpers, type: :controller
+  config.include Devise::Test::ControllerHelpers, type: :view
+  config.include Warden::Test::Helpers
 
   # Filter lines from Rails gems in backtraces.
   config.filter_rails_from_backtrace!

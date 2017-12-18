@@ -38,6 +38,7 @@ gem 'haml-rails'
 gem 'bootstrap-sass'
 gem 'jquery-rails'
 gem 'mime-types'
+gem 'devise'
 
 group :development, :test do
   gem 'sqlite3'
@@ -50,6 +51,7 @@ group :development, :test do
   gem 'rails-controller-testing'
   gem 'factory_bot_rails'
   gem 'faker'
+  gem 'devise-bootstrap-views'
 end
 
 group :test do
