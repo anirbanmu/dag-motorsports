@@ -37,7 +37,7 @@ ActiveRecord::Schema.define(version: 20171217233330) do
     t.string "publisher"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["name"], name: "index_games_on_name"
+    t.index ["name"], name: "index_games_on_name", unique: true
   end
 
   create_table "images", force: :cascade do |t|
@@ -55,7 +55,7 @@ ActiveRecord::Schema.define(version: 20171217233330) do
     t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["name"], name: "index_platforms_on_name"
+    t.index ["name"], name: "index_platforms_on_name", unique: true
   end
 
   create_table "tracks", force: :cascade do |t|
