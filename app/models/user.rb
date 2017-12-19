@@ -14,48 +14,17 @@ class User < ApplicationRecord
 
   protected
 
-  def self.find_for_database_authentication(warden_conditions)
+  def self.find_first_by_auth_conditions(warden_conditions)
     conditions = warden_conditions.dup
-    login = conditions.delete(:login)
-    where(conditions).where(["lower(username) = :value OR lower(email) = :value", {value: login.strip.downcase}]).first
-  end
-
-  # Attempt to find a user by it's email. If a record is found, send new
-  # password instructions to it. If not user is found, returns a new user
-  # with an email not found error.
-  def self.send_reset_password_instructions(attributes = {})
-    recoverable = find_recoverable_or_initialize_with_errors(reset_password_keys, attributes, :not_found)
-    recoverable.send_reset_password_instructions if recoverable.persisted?
-    recoverable
-  end
-
-  def self.find_recoverable_or_initialize_with_errors(required_attributes, attributes, error = :invalid)
-    (case_insensitive_keys || []).each {|k| attributes[k].try(:downcase!)}
-
-    attributes = attributes.permit(required_attributes)
-    if attributes.to_hash.length == required_attributes.length
-      if attributes.key?(:login)
-        login = attributes.fetch(:login)
-        record = find_record(login)
+    if login = conditions.delete(:login)
+      where(conditions).where(["lower(username) = :value OR lower(email) = :value", { :value => login.downcase }]).first
+    else
+      if conditions[:username].nil?
+        where(conditions).first
       else
-        record = where(attributes).first
+        where(username: conditions[:username]).first
       end
     end
-
-    unless record
-      record = new
-
-      required_attributes.each do |key|
-        value = attributes[key]
-        record.send("#{key}=", value)
-        record.errors.add(key, value.present? ? error : :blank)
-      end
-    end
-    record
-  end
-
-  def self.find_record(login)
-    where(["username = :value OR email = :value", {value: login}]).first
   end
 
   private
