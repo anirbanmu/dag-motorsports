@@ -1,7 +1,11 @@
 FactoryBot.define do
   factory :user do
-    
+    username { Faker::Name.unique.name.parameterize(separator: '_') }
+    email { Faker::Internet.unique.email }
+    password { Faker::Internet.password }
+    password_confirmation { password }
   end
+
   factory :platform do
     name { Faker::App.unique.name }
   end
