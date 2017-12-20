@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   root 'static_pages#home'
   get '/help', to: 'static_pages#help'
 
+  devise_for :users
   resources :games, only: [:show, :index]
   resources :circuits, only: [:show]
 end
