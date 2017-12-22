@@ -217,3 +217,96 @@
         - { name: South Circuit, length: 1.47 }
         - { name: North Corkscrew, length: 1.43 }
         - { name: Corkscrew, length: 2.95 }
+
+- game: Gran Turismo Sport
+  tracks:
+    - name: Alsace
+      ribbons:
+        - { name: Village }
+        - { name: Village II }
+
+    - name: Autodrome Lago Maggiore
+      ribbons:
+        - { name: GP }
+        - { name: GP II }
+
+    - name: Autódromo De Interlagos
+      ribbons:
+        - { name: Full Circuit }
+
+    - name: Blue Moon Bay
+      ribbons:
+        - { name: Speedway }
+        - { name: Speedway II }
+
+    - name: Brands Hatch
+      ribbons:
+        - { name: Grand Prix Circuit }
+        - { name: Indy Circuit }
+
+    - name: Broad Bean Raceway
+      ribbons:
+        - { name: Full Circuit }
+        - { name: Full Circuit II }
+
+    - name: Colorado Springs
+      ribbons:
+        - { name: Lake }
+        - { name: Lake II }
+
+    - name: Dragon Tail
+      ribbons:
+        - { name: Seaside }
+        - { name: Seaside II }
+
+    - name: Fishermans Ranch
+      ribbons:
+        - { name: Full Circuit }
+        - { name: Full Circuit II }
+
+    - name: KYOTO DRIVING PARK
+      ribbons:
+        - { name: MIYABI }
+        - { name: YAMAGIWA }
+        - { name: YAMAGIWA II }
+
+    - name: Mount Panorama Motor Racing Circuit
+      ribbons:
+        - { name: Full Circuit }
+
+    - name: Northern Isle Speedway
+      ribbons:
+        - { name: Speedway }
+        - { name: Infield }
+
+    - name: Nürburgring
+      ribbons:
+        - { name: 24H }
+        - { name: GP }
+        - { name: Nordschleife }
+        - { name: Nordschleife Tourist Layout }
+
+    - name: Sardegna
+      ribbons:
+        - { name: Windmills }
+        - { name: Windmills II }
+
+    - name: Suzuka Circuit
+      ribbons:
+        - { name: Full Circuit }
+        - { name: East Course }
+
+    - name: Tokyo Expressway
+      ribbons:
+        - { name: Central Inner Loop }
+        - { name: Central Outer Loop }
+        - { name: East Inner Loop }
+        - { name: East Outer Loop }
+
+    - name: Willow Springs International Raceway
+      ribbons:
+        - { name: Big Willow }
+        - { name: Horse Thief Mile }
+        - { name: Horse Thief Mile II }
+        - { name: Streets of Willow Springs }
+        - { name: Streets of Willow Springs II }
