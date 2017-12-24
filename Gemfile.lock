@@ -197,6 +197,7 @@ GEM
       rspec-mocks (~> 3.7.0)
       rspec-support (~> 3.7.0)
     rspec-support (3.7.0)
+    ruby-units (2.2.1)
     ruby_dep (1.5.0)
     ruby_parser (3.10.1)
       sexp_processor (~> 4.9)
@@ -277,6 +278,7 @@ DEPENDENCIES
   rails-controller-testing
   rspec-html-matchers
   rspec-rails
+  ruby-units
   sass-rails (~> 5.0)
   selenium-webdriver
   spring
@@ -290,4 +292,4 @@ RUBY VERSION
    ruby 2.3.3p222
 
 BUNDLED WITH
-   1.16.0
+   1.16.1

@@ -40,6 +40,7 @@ gem 'jquery-rails'
 gem 'mime-types'
 gem 'devise'
 gem 'devise-bootstrap-views'
+gem 'ruby-units'
 
 group :development, :test do
   gem 'sqlite3'

@@ -52,7 +52,7 @@ track_seeds.each do |game_tracks|
     track = Track.find_or_create_by!(name: track_properties.fetch('name'), game: game)
     track_properties.fetch('ribbons').each do |ribbon|
       circuit = Circuit.find_or_initialize_by(name: ribbon.fetch('name'), track: track)
-      circuit.length = ribbon['length']
+      circuit.length = ribbon['length'] ? Unit.new(ribbon['length']).convert_to('m').scalar : nil
       circuit.save!
     end
   end
