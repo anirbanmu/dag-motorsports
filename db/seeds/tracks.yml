@@ -407,3 +407,163 @@
     - name: Zandvoort
       ribbons:
         - { name: Full, length: 4307 m }
+
+- game: Automobilista
+  tracks:
+    - name: Montreal
+      ribbons:
+        - { name: Historic 1988 }
+
+    - name: Interlagos
+      ribbons:
+        - { name: Historic 1976 }
+        - { name: Historic External Ring }
+        - { name: Kart 1 }
+        - { name: Kart 2 }
+        - { name: Kart 3 }
+        - { name: Modern Stock Car Chicane 2015 }
+        - { name: Modern GP No Chicane 2015 }
+
+    - name: Jacarepagua
+      ribbons:
+        - { name: Historic }
+        - { name: Modern }
+        - { name: Modern 2005 }
+        - { name: Modern Curval Sul }
+        - { name: Modern Oval }
+
+    - name: Johannesburg
+      ribbons:
+        - { name: Historic }
+
+    - name: Spielberg
+      ribbons:
+        - { name: Historic GP Chicane }
+        - { name: Historic Vintage No Chicane }
+        - { name: Modern GP }
+        - { name: Modern Short }
+        - { name: Super Truck Short }
+
+    - name: Floripa
+      ribbons:
+        - { name: Kart 1 }
+        - { name: Kart 2 }
+        - { name: Kart 3 }
+        - { name: Kart 4 }
+        - { name: Modern }
+
+    - name: Granja Viana
+      ribbons:
+        - { name: Kart 1 }
+        - { name: Kart 2 }
+        - { name: Kart 3 }
+        - { name: Kart 4 }
+        - { name: Kart 5 }
+        - { name: Kart 6 }
+
+    - name: Ortona
+      ribbons:
+        - { name: Kart 1 }
+        - { name: Kart 2 }
+        - { name: Kart 3 }
+        - { name: Kart 4 }
+
+    - name: Brasilia
+      ribbons:
+        - { name: Modern }
+        - { name: Modern Full }
+
+    - name: Buenos Aires
+      ribbons:
+        - { name: Modern 6 }
+        - { name: Modern 8 }
+        - { name: Modern 12 }
+        - { name: Modern 15 }
+
+    - name: Campo Grande
+      ribbons:
+        - { name: Modern }
+
+    - name: Caruaru
+      ribbons:
+        - { name: Modern }
+
+    - name: Carcavel
+      ribbons:
+        - { name: Modern }
+        - { name: Super Truck }
+
+    - name: Cordoba
+      ribbons:
+        - { name: Modern }
+        - { name: Super Truck }
+
+    - name: Curitiba
+      ribbons:
+        - { name: Modern }
+        - { name: Modern Outer }
+        - { name: Super Truck }
+
+    - name: Goiania
+      ribbons:
+        - { name: Modern }
+        - { name: Modern Short }
+        - { name: Super Truck }
+
+    - name: Guapore
+      ribbons:
+        - { name: Modern }
+        - { name: Super Truck }
+
+    - name: Kansai
+      ribbons:
+        - { name: Modern GP Suzuka }
+        - { name: Modern East Suzuka }
+        - { name: Super Truck East Suzuka }
+
+    - name: Londrina
+      ribbons:
+        - { name: Modern }
+        - { name: Modern Long }
+
+    - name: Ribeirao Preto
+      ribbons:
+        - { name: Modern 2010 }
+        - { name: Modern 2012 }
+
+    - name: Salvador
+      ribbons:
+        - { name: Modern }
+        - { name: Super Truck }
+
+    - name: Santa Cruz Do Sul
+      ribbons:
+        - { name: Modern }
+
+    - name: Taruma
+      ribbons:
+        - { name: Modern No Chicane }
+        - { name: Modern Chicane }
+
+    - name: Velo Citta
+      ribbons:
+        - { name: Modern }
+        - { name: Modern Club Day }
+        - { name: Modern Track Day }
+
+    - name: Velopark
+      ribbons:
+        - { name: Modern }
+        - { name: Modern 2010 }
+        - { name: Super Truck }
+
+    - name: Tykki
+      ribbons:
+        - { name: RallyCross Dirt 1 }
+        - { name: RallyCross Dirt 2 }
+        - { name: RallyCross RX }
+        - { name: RallyCross Tarmac }
+
+    - name: Foz
+      ribbons:
+        - { name: RallyCross }
