@@ -33,6 +33,11 @@ FactoryBot.define do
     track { create(:track) }
   end
 
+  factory :car do
+    name { Faker::Lorem.words(2).join(' ') }
+    game { create(:game) }
+  end
+
   factory :image do
     filename { ('a'..'z').to_a.shuffle[0, 8].join + '.png' }
     mimetype { 'image/png' }
