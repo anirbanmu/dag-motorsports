@@ -65,12 +65,20 @@ RSpec.describe Game, type: :model do
   end
 
   it 'destroys tracks when game is destroyed' do
-    track = create(:track)
-    expect(track).to be_valid
+    game = create(:game)
+    create_list(:track, 6, game: game)
 
-    track2 = create(:track, game: track.game)
-    expect(track2).to be_valid
+    create(:track)
 
-    expect{ track.game.destroy }.to change{ Track.count }.from(2).to(0)
+    expect{ game.destroy }.to change{ Track.count }.from(7).to(1)
+  end
+
+  it 'destroys cars when game is destroyed' do
+    game = create(:game)
+    create_list(:car, 6, game: game)
+
+    create(:car)
+
+    expect{ game.destroy }.to change{ Car.count }.from(7).to(1)
   end
 end
