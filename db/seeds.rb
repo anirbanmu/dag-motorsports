@@ -49,11 +49,19 @@ track_seeds = YAML::load_file(File.join(seeds_path, 'tracks.yml'))
 track_seeds.each do |game_tracks|
   game = Game.find_by(name: game_tracks.fetch('game'))
   game_tracks.fetch('tracks').each do |track_properties|
-    track = Track.find_or_create_by!(name: track_properties.fetch('name'), game: game)
+    track = game.tracks.find_or_create_by!(name: track_properties.fetch('name'))
     track_properties.fetch('ribbons').each do |ribbon|
-      circuit = Circuit.find_or_initialize_by(name: ribbon.fetch('name'), track: track)
+      circuit = track.circuits.find_or_initialize_by(name: ribbon.fetch('name'))
       circuit.length = ribbon['length'] ? Unit.new(ribbon['length']).convert_to('m').scalar : nil
       circuit.save!
     end
+  end
+end
+
+car_seeds = YAML::load_file(File.join(seeds_path, 'cars.yml'))
+car_seeds.each do |game_cars|
+  game = Game.find_by(name: game_cars.fetch(:game))
+  game_cars.fetch(:cars).each do |car_properties|
+    game.cars.find_or_create_by!(name: car_properties.fetch(:name))
   end
 end
