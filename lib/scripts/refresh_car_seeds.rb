@@ -27,4 +27,12 @@ def refresh_forza
   update_cars_yml('cars.yml', 'Forza Motorsport 7', cars)
 end
 
+def refresh_gtsport
+  html = Nokogiri::HTML(get_html('https://www.gran-turismo.com/us/products/gtsport/carlist/'))
+  car_nodes = html.search('dl:not([class])')
+  cars = car_nodes.map{ |n| n.search('dd').take(2).map{ |x| x.text.strip }.join(' ') }
+  update_cars_yml('cars.yml', 'Gran Turismo Sport', cars)
+end
+
 refresh_forza
+refresh_gtsport
