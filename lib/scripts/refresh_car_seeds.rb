@@ -34,5 +34,19 @@ def refresh_gtsport
   update_cars_yml('cars.yml', 'Gran Turismo Sport', cars)
 end
 
+def refresh_assetto
+  html = Nokogiri::HTML(get_html('http://www.assettocorsa.net/cars/'))
+
+  cars = []
+  html.search('#marchi').first.search('.row.no-gutters').each do |m|
+    # Not foolproof for casing. If 3 letters or less, name is assumed to be an acronym and upcased.
+    manufacturer = m.search('h3').first.text.split.map{ |w| w.length > 3 ? w.capitalize : w.upcase }.join(' ').strip
+    cars.push(*m.search('p').map{ |c| "#{manufacturer} #{c.text.strip}" })
+  end
+
+  update_cars_yml('cars.yml', 'Assetto Corsa', cars)
+end
+
 refresh_forza
 refresh_gtsport
+refresh_assetto
