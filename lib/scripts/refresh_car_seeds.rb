@@ -30,7 +30,11 @@ end
 def refresh_gtsport
   html = Nokogiri::HTML(get_html('https://www.gran-turismo.com/us/products/gtsport/carlist/'))
   car_nodes = html.search('dl:not([class])')
-  cars = car_nodes.map{ |n| n.search('dd').take(2).map{ |x| x.text.strip }.join(' ') }
+  cars = car_nodes.map{ |n| n.search('dd').take(2).map{ |t| t.text.strip } }
+  cars = cars.map do |manufacturer, model|
+    model_sanitized = model.sub(/^\s*#{manufacturer}\s*/i, '')
+    "#{manufacturer} #{model_sanitized}"
+  end
   update_cars_yml('cars.yml', 'Gran Turismo Sport', cars)
 end
 

@@ -1,4 +1,39 @@
 ---
+- :game: Automobilista
+  :cars:
+  - :name: Formula Vee
+  - :name: Formula 3 /301
+  - :name: Formula 3 /309
+  - :name: Formula 1 - 1976
+  - :name: Formula 1 - 1988
+  - :name: Formula 1 V10
+  - :name: Formula 1 - 1995
+  - :name: Formula 1 - 2012
+  - :name: Formula 1 - 2014
+  - :name: Chevrolet Camaro
+  - :name: Mini Challenge
+  - :name: Stock Car Opala - 1979
+  - :name: Stock Car Opala - 1986
+  - :name: Stock Car Chevrolet V8
+  - :name: Stock Car Peugeot V8
+  - :name: Super V8
+  - :name: Metalmoro MR18
+  - :name: Super Truck
+  - :name: Marcas Toyota
+  - :name: Marcas Chevrolet
+  - :name: Marcas Mitsubishi
+  - :name: Marcas Ford
+  - :name: Marcas Renault Fluence
+  - :name: Mitsubishi Lancer R
+  - :name: Mitsubishi Lancer RS
+  - :name: Mitsubishi Lancer EVO Rally
+  - :name: Marcas Honda
+  - :name: Kart - Rental
+  - :name: Kart - Rental Race
+  - :name: Kart - Shifter 6 gears
+  - :name: Kart - Direct drive
+  - :name: Kart - Bodywork
+  - :name: Super Kart
 - :game: Forza Motorsport 7
   :cars:
   - :name: 2016 Abarth 695 Biposto
@@ -749,29 +784,29 @@
   - :name: Alfa Romeo 4C Launch Edition
   - :name: Alfa Romeo MiTo 1.4 T Sport
   - :name: Alfa Romeo 4C Gr.3 Road Car
-  - :name: Alpine Alpine Vision Gran Turismo
-  - :name: Alpine Alpine Vision Gran Turismo 2017
-  - :name: Alpine Alpine Vision Gran Turismo Race Mode
-  - :name: Aston Martin Aston Martin DP-100 Vision Gran Turismo
-  - :name: Aston Martin Aston Martin Vulcan
+  - :name: Alpine Vision Gran Turismo
+  - :name: Alpine Vision Gran Turismo 2017
+  - :name: Alpine Vision Gran Turismo Race Mode
+  - :name: Aston Martin DP-100 Vision Gran Turismo
+  - :name: Aston Martin Vulcan
   - :name: Aston Martin One-77
   - :name: Aston Martin V12 Vantage GT3
   - :name: Aston Martin V8 Vantage S
   - :name: Aston Martin Vantage Gr.4
-  - :name: Audi Audi R18 TDI (Audi Sport Team Joest)
-  - :name: Audi Audi R8 LMS (Audi Sport Team WRT)
-  - :name: Audi Audi Sport quattro S1 Pikes Peak
+  - :name: Audi R18 TDI (Audi Sport Team Joest)
+  - :name: Audi R8 LMS (Audi Sport Team WRT)
+  - :name: Audi Sport quattro S1 Pikes Peak
   - :name: Audi TT cup
   - :name: Audi TTS Coupé
-  - :name: BMW BMW i3
-  - :name: BMW BMW M4 Coupé
-  - :name: BMW BMW M4 Gr.4
-  - :name: BMW BMW M4 Safety Car
-  - :name: BMW BMW M6 GT3 (Walkenhorst Motorsport)
-  - :name: BMW BMW M6 GT3 M Power Livery
-  - :name: BMW BMW Vision Gran Turismo
-  - :name: BMW BMW Z4 GT3
-  - :name: Bugatti Bugatti Vision Gran Turismo
+  - :name: BMW i3
+  - :name: BMW M4 Coupé
+  - :name: BMW M4 Gr.4
+  - :name: BMW M4 Safety Car
+  - :name: BMW M6 GT3 (Walkenhorst Motorsport)
+  - :name: BMW M6 GT3 M Power Livery
+  - :name: BMW Vision Gran Turismo
+  - :name: BMW Z4 GT3
+  - :name: Bugatti Vision Gran Turismo
   - :name: Bugatti Veyron 16.4
   - :name: Bugatti Veyron Gr.4
   - :name: Chaparral Chevrolet Chaparral 2X Vision Gran Turismo
@@ -785,8 +820,8 @@
   - :name: Citroën GT by Citroën Gr.4
   - :name: Citroën GT by Citroën Race Car (Gr.3)
   - :name: Citroën GT by Citroën Road Car
-  - :name: Daihatsu DAIHATSU COPEN RJ Vision Gran Turismo
-  - :name: Dodge Dodge Charger SRT Hellcat
+  - :name: Daihatsu COPEN RJ Vision Gran Turismo
+  - :name: Dodge Charger SRT Hellcat
   - :name: Dodge SRT Tomahawk GTS-R Vision Gran Turismo
   - :name: Dodge SRT Tomahawk S Vision Gran Turismo
   - :name: Dodge SRT Tomahawk Vision Gran Turismo (Gr.1)
@@ -809,11 +844,11 @@
   - :name: Ford Mustang Gr.B Rally Car
   - :name: Ford Mustang GT Premium Fastback
   - :name: Ford Mustang Gr.3 Road Car
-  - :name: Gran Turismo Gran Turismo Racing Kart 125 Shifter
+  - :name: Gran Turismo Racing Kart 125 Shifter
   - :name: GT Awards (SEMA) Chris Holstrom Concepts
   - :name: Honda Civic Type R (FK2)
-  - :name: Honda Honda Project 2&4 powered by RC213V
-  - :name: Honda Honda Sports Vision Gran Turismo
+  - :name: Honda Project 2&4 powered by RC213V
+  - :name: Honda Sports Vision Gran Turismo
   - :name: Honda NSX
   - :name: Honda NSX Gr.3
   - :name: Honda NSX Gr.4
@@ -822,8 +857,8 @@
   - :name: Hyundai Genesis Gr.3
   - :name: Hyundai Genesis Gr.4
   - :name: Hyundai Genesis Gr.B Rally Car
-  - :name: Hyundai HYUNDAI N 2025 Vision Gran Turismo
-  - :name: Infiniti INFINITI CONCEPT Vision Gran Turismo
+  - :name: Hyundai N 2025 Vision Gran Turismo
+  - :name: Infiniti CONCEPT Vision Gran Turismo
   - :name: Jaguar F-type Gr.3
   - :name: Jaguar F-type Gr.4
   - :name: Jaguar F-type R Coupé
@@ -834,7 +869,7 @@
   - :name: Lamborghini Huracán LP 610-4
   - :name: Lamborghini Veneno
   - :name: Lexus LC500
-  - :name: Lexus LEXUS LF-LC GT “Vision Gran Turismo”
+  - :name: Lexus LF-LC GT “Vision Gran Turismo”
   - :name: Lexus RC F
   - :name: Lexus RC F Gr.4
   - :name: Lexus RC F GT3 prototype (Emil Frey Racing)
@@ -848,18 +883,18 @@
   - :name: McLaren 650S Coupe
   - :name: McLaren 650S Gr.4
   - :name: McLaren 650S GT3
-  - :name: McLaren McLaren Ultimate Vision Gran Turismo
+  - :name: McLaren Ultimate Vision Gran Turismo
   - :name: McLaren MP4-12C
   - :name: Mercedes-Benz A 45 AMG 4MATIC
   - :name: Mercedes-Benz Mercedes-AMG GT S
   - :name: Mercedes-Benz Mercedes-AMG GT Safety Car
   - :name: Mercedes-Benz Mercedes-AMG GT3 (AMG-Team HTP-Motorsport)
-  - :name: Mercedes-Benz Mercedes-Benz AMG Vision Gran Turismo
-  - :name: Mercedes-Benz Mercedes-Benz AMG Vision Gran Turismo Racing Series
+  - :name: Mercedes-Benz AMG Vision Gran Turismo
+  - :name: Mercedes-Benz AMG Vision Gran Turismo Racing Series
   - :name: Mercedes-Benz SLS AMG
   - :name: Mercedes-Benz SLS AMG Gr.4
   - :name: Mercedes-Benz SLS AMG GT3
-  - :name: MINI MINI Clubman Vision Gran Turismo
+  - :name: MINI Clubman Vision Gran Turismo
   - :name: Mitsubishi Concept XR-PHEV EVOLUTION Vision Gran Turismo
   - :name: Mitsubishi Lancer Evolution Final Edition
   - :name: Mitsubishi Lancer Evolution Final Edition    Gr.3
@@ -872,15 +907,15 @@
   - :name: Nissan GT-R NISMO GT3 N24 Schulze Motorsport
   - :name: Nissan GT-R Premium edition
   - :name: Nissan GT-R Safety Car
-  - :name: Nissan NISSAN CONCEPT 2020 Vision Gran Turismo
+  - :name: Nissan CONCEPT 2020 Vision Gran Turismo
   - :name: Nissan Skyline GT-R V・spec II (R32)
   - :name: Nissan Skyline GT-R V・spec II Nür (R34)
   - :name: Peugeot 208 GTi by Peugeot Sport
-  - :name: Peugeot Peugeot 908 HDi FAP - Team Peugeot Total
-  - :name: Peugeot Peugeot L500R HYbrid Vision Gran Turismo, 2017
-  - :name: Peugeot Peugeot L750R HYbrid Vision Gran Turismo, 2017
-  - :name: Peugeot PEUGEOT Vision Gran Turismo
-  - :name: Peugeot PEUGEOT Vision Gran Turismo (Gr.3)
+  - :name: Peugeot 908 HDi FAP - Team Peugeot Total
+  - :name: Peugeot L500R HYbrid Vision Gran Turismo, 2017
+  - :name: Peugeot L750R HYbrid Vision Gran Turismo, 2017
+  - :name: Peugeot Vision Gran Turismo
+  - :name: Peugeot Vision Gran Turismo (Gr.3)
   - :name: Peugeot RCZ Gr.3
   - :name: Peugeot RCZ Gr.4
   - :name: Peugeot RCZ Gr.B Rally Car
@@ -889,14 +924,14 @@
   - :name: Porsche 911 GT3 RS (991)
   - :name: Porsche 911 RSR (991)
   - :name: Porsche Cayman GT4 Clubsport
-  - :name: Porsche Porsche 919 Hybrid (Porsche Team)
+  - :name: Porsche 919 Hybrid (Porsche Team)
   - :name: Renault Sport Clio R.S. 220 EDC Trophy
   - :name: Renault Sport Mégane Gr.4
   - :name: Renault Sport Mégane R.S. Trophy
   - :name: Renault Sport R.S.01
   - :name: Renault Sport R.S.01 GT3
-  - :name: Shelby Shelby Cobra 427
-  - :name: Subaru SUBARU VIZIV GT Vision Gran Turismo
+  - :name: Shelby Cobra 427
+  - :name: Subaru VIZIV GT Vision Gran Turismo
   - :name: Subaru WRX Gr.3
   - :name: Subaru WRX Gr.4
   - :name: Subaru WRX Gr.B Rally Car
@@ -904,14 +939,14 @@
   - :name: Subaru WRX Gr.B Road Car
   - :name: Suzuki Swift Sport
   - :name: Toyota 86 GRMN
-  - :name: Toyota TOYOTA 86 Gr.4
-  - :name: Toyota TOYOTA 86 Gr.B Rally Car
-  - :name: Toyota TOYOTA 86 GT
-  - :name: Toyota Toyota FT-1 Vision Gran Turismo
-  - :name: Toyota Toyota FT-1 Vision Gran Turismo (Gr.3)
-  - :name: Toyota TOYOTA S-FR
-  - :name: Toyota TOYOTA S-FR Racing Concept
-  - :name: Toyota Toyota TS050 - Hybrid (Toyota Gazoo Racing)
+  - :name: Toyota 86 Gr.4
+  - :name: Toyota 86 Gr.B Rally Car
+  - :name: Toyota 86 GT
+  - :name: Toyota FT-1 Vision Gran Turismo
+  - :name: Toyota FT-1 Vision Gran Turismo (Gr.3)
+  - :name: Toyota S-FR
+  - :name: Toyota S-FR Racing Concept
+  - :name: Toyota TS050 - Hybrid (Toyota Gazoo Racing)
   - :name: Toyota TS030 Hybrid
   - :name: Volkswagen Golf VII GTI
   - :name: Volkswagen GTI Roadster Vision Gran Turismo
@@ -919,7 +954,7 @@
   - :name: Volkswagen GTI Vision Gran Turismo (Gr.3)
   - :name: Volkswagen Samba Bus Type 2 (T1)
   - :name: Volkswagen Scirocco Gr.4
-  - :name: Volkswagen Volkswagen Beetle Gr.3
+  - :name: Volkswagen Beetle Gr.3
   - :name: Zagato IsoRivolta Zagato Vision Gran Turismo
 - :game: Assetto Corsa
   :cars:
@@ -1100,38 +1135,3 @@
   - :name: Toyota Supra Time Attack
   - :name: Toyota Celica TS 185
   - :name: Toyota TS 040 Hybrid
-- :game: Automobilista
-  :cars:
-  - :name: Formula Vee
-  - :name: Formula 3 /301
-  - :name: Formula 3 /309
-  - :name: Formula 1 - 1976
-  - :name: Formula 1 - 1988
-  - :name: Formula 1 V10
-  - :name: Formula 1 - 1995
-  - :name: Formula 1 - 2012
-  - :name: Formula 1 - 2014
-  - :name: Chevrolet Camaro
-  - :name: Mini Challenge
-  - :name: Stock Car Opala - 1979
-  - :name: Stock Car Opala - 1986
-  - :name: Stock Car Chevrolet V8
-  - :name: Stock Car Peugeot V8
-  - :name: Super V8
-  - :name: Metalmoro MR18
-  - :name: Super Truck
-  - :name: Marcas Toyota
-  - :name: Marcas Chevrolet
-  - :name: Marcas Mitsubishi
-  - :name: Marcas Ford
-  - :name: Marcas Renault Fluence
-  - :name: Mitsubishi Lancer R
-  - :name: Mitsubishi Lancer RS
-  - :name: Mitsubishi Lancer EVO Rally
-  - :name: Marcas Honda
-  - :name: Kart - Rental
-  - :name: Kart - Rental Race
-  - :name: Kart - Shifter 6 gears
-  - :name: Kart - Direct drive
-  - :name: Kart - Bodywork
-  - :name: Super Kart
